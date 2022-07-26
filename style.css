@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;	
+}
+
+body::before {
+	content: '';
+	width: 100%;
+	height: 40rem;
+	background: hsl(228.8,80%,15.7%);
+	
+
+	z-index: -1;
+	position: absolute;
+	top: 0;
+
+}
+
+body {
+	font-family:  'Open Sans', sans-serif;
+	background-color: hsl(17.1,25.9%,94.7%);
+}
+
+header {
+	/* position: relative; */
+	color: hsl(0,0%,100%);
+	text-align: center;
+	padding-bottom: 12rem;
+}
+
+.logo {
+	position: absolute;
+	top: 3rem;
+	left: 5rem;
+}
+
+header h1 {
+	padding: 10rem 0 2rem;
+	font-size: 4rem;
+}
+
+header p {
+	font-size: 1.8rem;
+}
+
+header a {
+	text-decoration: none;
+	color: hsl(0,0%,100%);
+}
+
+header a:hover {
+	color: rgb(76, 233, 244);
+}
+
+/* header a:visited {
+	color: hsl(0,0%,100%);	
+} */
+
+main {
+	display: grid;
+	justify-content: center;
+	grid-template-areas: 
+	"A B C"
+	"D E F";
+	grid-template-columns: 30rem 30rem 30rem;
+	gap: 3.5rem;
+}
+
+main div:nth-child(1) {
+	grid-area: A;
+}
+
+main div:nth-child(2) {
+	grid-area: B;
+}
+
+main div:nth-child(3) {
+	grid-area: C;
+}
+
+main div:nth-child(4) {
+	grid-area: D;
+}
+
+main div:nth-child(5) {
+	grid-area: E;
+}
+
+main div:nth-child(6) {
+	grid-area: F;
+}
+
+.card {
+	background: #fff;
+	border-radius: 6px;
+	height: fit-content;
+}
+
+.card:hover .description {
+	background: hsl(228.8,80%,15.7%);
+	color: hsl(17.1,25.9%,94.7%);
+}
+
+.card img {
+	display: block;
+	cursor: pointer;
+	width: 30rem;
+	height: 16.8rem;
+	border-radius: 5px 5px 0 0;
+}
+
+.description {
+	padding: 0.5rem 2rem 2rem;
+	color: hsl(228.8,80%,15.7%);
+	height: 12rem;
+	transition: 0.5s;	
+}
+
+.description h2 {
+	font-size: 1.8rem;
+	padding-bottom: 1rem;
+}
+
+.description h3 {
+	font-size: 1.4rem;
+	color:hsl(0,0%,65.1%);
+}
+
+.description p {
+	font-size: 1.4rem;
+}
+
+footer {
+	padding-top: 8rem;
+	text-align: center;
+	font-size: 1.4rem;
+}
