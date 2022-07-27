@@ -30,7 +30,7 @@ header {
 	/* position: relative; */
 	color: hsl(0,0%,100%);
 	text-align: center;
-	padding-bottom: 12rem;
+	padding-bottom: 10rem;
 }
 
 .logo {
@@ -56,10 +56,6 @@ header a {
 header a:hover {
 	color: rgb(76, 233, 244);
 }
-
-/* header a:visited {
-	color: hsl(0,0%,100%);	
-} */
 
 main {
 	display: grid;
@@ -96,13 +92,21 @@ main div:nth-child(6) {
 }
 
 .card {
+	position: relative;
 	background: #fff;
 	border-radius: 6px;
 	height: fit-content;
+
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
-.card:hover .description {
-	background: hsl(228.8,80%,15.7%);
+.card:hover .description{
+	/* background: hsl(228.8,80%,15.7%); */
+	background: #36528c;
+	color: hsl(17.1,25.9%,94.7%);
+}
+
+.card:hover .description a{
 	color: hsl(17.1,25.9%,94.7%);
 }
 
@@ -115,9 +119,12 @@ main div:nth-child(6) {
 }
 
 .description {
-	padding: 0.5rem 2rem 2rem;
 	color: hsl(228.8,80%,15.7%);
-	height: 12rem;
+
+	height: 13rem;
+	padding: 0.5rem 2rem 2rem;
+	border-radius: 0 0 5px 5px;
+
 	transition: 0.5s;	
 }
 
@@ -135,6 +142,16 @@ main div:nth-child(6) {
 	font-size: 1.4rem;
 }
 
+.description a {
+	position: absolute;
+	left: 2rem;
+	bottom: 1rem;
+	
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: hsl(228.8,80%,15.7%);
+}
+
 footer {
 	padding-top: 8rem;
 	text-align: center;
@@ -143,4 +160,46 @@ footer {
 
 footer p {
 	padding-bottom: 2rem;
+}
+
+@media(max-width: 1030px) {
+	main {
+		grid-template-areas: 
+		"A B"
+		"C D"
+		"E F";
+		grid-template-columns: 30rem 30rem;
+	}
+}
+
+@media(max-width: 768px) {
+	.logo {
+		top: 2rem;
+		left: 2rem;
+	}
+
+	header {
+		width: clamp(37.2rem, 29rem + 26vw, 76rem);
+		margin: auto;
+		padding-bottom: 6rem;
+	}
+
+	header h1 {
+		font-size: 3.6rem;
+	}
+	
+	header p {
+		font-size: 1.5rem;
+	}
+
+	main {
+		grid-template-areas: 
+		"A"
+		"B"
+		"C"
+		"D"
+		"E"
+		"F";
+		grid-template-columns: 30rem;
+	}
 }
