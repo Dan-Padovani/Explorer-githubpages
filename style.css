@@ -12,13 +12,13 @@ body::before {
 	content: '';
 	width: 100%;
 	height: 40rem;
-	background: hsl(228.8,80%,15.7%);
-	
+	background: linear-gradient(135deg, #081449, #214c5b, #2f87a2,#42d3ff);
+	background-size: 300% 300%;
+	animation: transitionColors 15s ease infinite;
 
 	z-index: -1;
 	position: absolute;
 	top: 0;
-
 }
 
 body {
@@ -27,7 +27,6 @@ body {
 }
 
 header {
-	/* position: relative; */
 	color: hsl(0,0%,100%);
 	text-align: center;
 	padding-bottom: 10rem;
@@ -35,6 +34,7 @@ header {
 
 .logo {
 	position: absolute;
+	
 	top: 3rem;
 	left: 5rem;
 }
@@ -160,6 +160,19 @@ footer {
 
 footer p {
 	padding-bottom: 2rem;
+}
+
+/*Animation*/
+@keyframes transitionColors {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
 }
 
 @media(max-width: 1030px) {
