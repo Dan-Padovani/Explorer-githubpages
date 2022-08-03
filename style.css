@@ -100,8 +100,12 @@ main div:nth-child(6) {
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
+.card:hover {
+	transform: translateY(-1.7rem);
+	transition: 0.7s;
+}
+
 .card:hover .description{
-	/* background: hsl(228.8,80%,15.7%); */
 	background: #36528c;
 	color: hsl(17.1,25.9%,94.7%);
 }
