@@ -29,7 +29,6 @@ body {
 header {
 	color: hsl(0,0%,100%);
 	text-align: center;
-	padding-bottom: 10rem;
 }
 
 .logo {
@@ -57,12 +56,19 @@ header a:hover {
 	color: rgb(76, 233, 244);
 }
 
+header h2 {
+	padding: 7rem 0 3rem;
+	font-size: 2.6rem;
+	letter-spacing: 4px;
+}
+
 main {
 	display: grid;
 	justify-content: center;
 	grid-template-areas: 
-	"A B C"
-	"D E F";
+	"G F E"
+	"D C B"
+	"A H I";
 	grid-template-columns: 30rem 30rem 30rem;
 	gap: 3.5rem;
 }
@@ -91,6 +97,22 @@ main div:nth-child(6) {
 	grid-area: F;
 }
 
+main div:nth-child(7) {
+	grid-area: G;
+}
+
+/*
+Future next implement
+
+main div:nth-child(8) {
+	grid-area: H;
+}
+
+main div:nth-child(9) {
+	grid-area: I;
+}
+
+*/
 .card {
 	position: relative;
 	background: #fff;
