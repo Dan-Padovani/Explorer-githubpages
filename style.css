@@ -249,7 +249,7 @@ footer p {
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
 	.logo {
 		top: 2rem;
 		left: 2rem;
