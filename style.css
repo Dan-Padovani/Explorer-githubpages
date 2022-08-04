@@ -14,7 +14,7 @@
 body::before {
 	content: '';
 	width: 100%;
-	height: 40rem;
+	height: 36rem;
 	background: linear-gradient(135deg, #081449, #214c5b, #2f87a2,#42d3ff);
 	background-size: 300% 300%;
 	animation: transitionColors 15s ease infinite;
@@ -37,12 +37,12 @@ header {
 .logo {
 	position: absolute;
 	
-	top: 3rem;
+	top: 2rem;
 	left: 5rem;
 }
 
 header h1 {
-	padding: 10rem 0 2rem;
+	padding: 6rem 0 2rem;
 	font-size: 4rem;
 }
 
@@ -60,7 +60,7 @@ header a:hover {
 }
 
 header h2 {
-	padding: 7rem 0 3rem;
+	padding: 4rem 0 3rem;
 	font-size: 2.6rem;
 	letter-spacing: 4px;
 }
@@ -74,6 +74,10 @@ main {
 	"A H I";
 	grid-template-columns: 30rem 30rem 30rem;
 	gap: 3.5rem;
+}
+
+main > div:nth-child(1) {
+	display: none;
 }
 
 main div:nth-child(1) {
@@ -127,12 +131,18 @@ button {
 	font-size: 1.6rem;
 	font-weight: bold;
 	color: var(--fc-main-white);
-	background-color: #42d3ff;
+	background-color: #2f87a2;
 	
 	border: none;
 	border-radius: 4px;
 
 }
+
+button:hover {
+	background-color: #081449;
+	transition: 0.7s;
+}
+
 .card {
 	position: relative;
 	background: var(--fc-main-white);
@@ -140,10 +150,6 @@ button {
 	height: fit-content;
 
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
-}
-
-.hide {
-	display: none;
 }
 
 .card:hover {
@@ -203,7 +209,7 @@ button {
 }
 
 footer {
-	padding-top: 6rem;
+	padding: 4rem 0 4rem;
 	text-align: center;
 	font-size: 1.4rem;
 }
@@ -234,6 +240,13 @@ footer p {
 		"A H";
 		grid-template-columns: 30rem 30rem;
 	}
+
+	main > div:nth-child(1),
+	main > div:nth-child(2),
+	main > div:nth-child(3) {
+		display: none;
+	}
+
 }
 
 @media(max-width: 768px) {
@@ -242,18 +255,27 @@ footer p {
 		left: 2rem;
 	}
 
+	.logo svg {
+		width: 180px;
+	}
+
 	header {
-		width: clamp(37.2rem, 29rem + 26vw, 76rem);
+		width: clamp(33rem, 23rem + 26vw, 76rem);
 		margin: auto;
-		padding-bottom: 6rem;
+		padding-bottom: 1rem;
 	}
 
 	header h1 {
-		font-size: 3.6rem;
+		font-size: 3.4rem;
 	}
 	
 	header p {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
+	}
+
+	header h2 {
+		padding: 3rem 0 1.5rem;
+		font-size: 2rem;
 	}
 
 	main {

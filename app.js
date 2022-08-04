@@ -3,7 +3,7 @@ const allDisplayCards = document.querySelectorAll('.card')
 
 buttonDisplayMore.addEventListener('click', function() {
 	allDisplayCards.forEach((element) => {
-		element.classList.remove('hide')
-		buttonDisplayMore.classList.add('hide')
+		element.style.display='block'
+		buttonDisplayMore.style.display='none'
 	})
 })
