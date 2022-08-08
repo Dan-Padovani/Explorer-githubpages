@@ -56,7 +56,7 @@ header a {
 }
 
 header a:hover {
-	color: rgb(76, 233, 244);
+	color: hsl(183.9,88.4%,62.7%);
 }
 
 header h2 {
@@ -132,14 +132,14 @@ button {
 	font-size: 1.6rem;
 	font-weight: bold;
 	color: var(--fc-main-white);
-	background-color: #2f87a2;
+	background-color: hsl(194.1,55%,41%);
 	
 	border: none;
 	border-radius: 4px;
 }
 
 button:hover {
-	background-color: #081449;
+	background-color: hsl(228.9,80.2%,15.9%);
 	transition: 0.7s;
 }
 
@@ -158,7 +158,7 @@ button:hover {
 }
 
 .card:hover .description{
-	background: #20657d;
+	background: hsl(195.5,59.2%,30.8%);
 	color: hsl(17.1,25.9%,94.7%);
 }
 
@@ -184,7 +184,7 @@ button:hover {
 }
 
 .loading-bar {
-  background: rgb(230, 230, 230);
+  background: hsl(0,0%,90.2%);
   justify-content: flex-start;
   border-radius: 8px;
   align-items: center;
@@ -198,7 +198,7 @@ button:hover {
 .card:hover .loading-value {
 	animation: load 2s normal forwards;
 	border-radius: 6px;
-  background: #179ab5;
+  background: hsl(190.3,77.5%,40%);
   height: 12px;
   width: 0;
 }
@@ -267,7 +267,8 @@ footer p {
     width: 0;
   }
     
-  100% { width: 8%;
+  100% { 
+		width: 15%;
   }
 }
 
