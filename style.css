@@ -175,13 +175,13 @@ button:hover {
 }
 
 /*For under construction card - css starts here*/
-.card:last-child img{
+/* .card:last-child img{
 	filter: blur(2px)
 }
 
 .card:last-child p{
 	text-align: center;
-}
+} */
 
 .loading-bar {
   background: hsl(0,0%,90.2%);
