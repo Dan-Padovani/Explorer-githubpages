@@ -2,4 +2,4 @@
 
 ### This is where I will public my projects and this repository is under construction
 
-### You can visit the project <a href="https://dan-padovani.github.io/Explorer-githubpages/">here</a>
+### You can visit the project <a href="https://dan-padovani.github.io/Explorer-githubpages/" target="_blank">here</a>
