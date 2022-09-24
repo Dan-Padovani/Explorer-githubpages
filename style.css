@@ -69,15 +69,16 @@ main {
 	display: grid;
 	justify-content: center;
 	grid-template-areas: 
-	"H G F"
-	"E D C"
-	"B A I";
+	"I H G"
+	"F E D"
+	"C B A";
 	grid-template-columns: 30rem 30rem 30rem;
 	gap: 3.5rem;
 }
 
 main > div:nth-child(1),
-main > div:nth-child(2) {
+main > div:nth-child(2),
+main > div:nth-child(3) {
 	display: none;
 }
 
@@ -113,11 +114,15 @@ main div:nth-child(8) {
 	grid-area: H;
 }
 
+main div:nth-child(9) {
+	grid-area: I;
+}
+
 /*
 Future next implement
 
-main div:nth-child(9) {
-	grid-area: I;
+main div:nth-child(10) {
+	grid-area: J;
 }
 
 */
@@ -150,11 +155,11 @@ button:hover {
 	height: fit-content;
 
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+	transition: 0.7s;
 }
 
 .card:hover {
-	transform: translateY(-1.7rem);
-	transition: 0.7s;
+	transform: translateY(-1.2rem);
 }
 
 .card:hover .description{
@@ -275,17 +280,19 @@ footer p {
 @media(max-width: 1030px) {
 	main {
 		grid-template-areas: 
-		"H G"
-		"F E"
-		"D C"
-		"B A";
+		"I H"
+		"G F"
+		"E D"
+		"C B"
+		"A J";
 		grid-template-columns: 30rem 30rem;
 	}
 
 	main > div:nth-child(1),
 	main > div:nth-child(2),
 	main > div:nth-child(3),
-	main > div:nth-child(4) {
+	main > div:nth-child(4),
+	main > div:nth-child(5) {
 		display: none;
 	}
 
@@ -322,6 +329,7 @@ footer p {
 
 	main {
 		grid-template-areas: 
+		"I"
 		"H"
 		"G"
 		"F"
